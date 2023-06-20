@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+   background: url(./image/pexels-rostislav-uzunov-5011647.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-attachment: fixed;
+   font-family: 'Roboto', sans-serif;
+}
+
+
+
+nav{
+    box-shadow: 2px 4px 10px black;
+
+}
+.navbar-brand{
+    font-family: 'Kablammo', cursive;
+    font-size: 32px;
+}
+
+
+.profile {
+    width: 110px;
+    height: 110px;
+    display: block;
+    margin: auto;
+
+}
+
+.profile img {
+
+
+    border-radius: 50%;
+
+
+}
+.aside{
+    background-color: #50da5cb3;
+    box-shadow: 2px 3px 9px white;
+}
+
+
+.change-content::after {
+    content: "";
+    color: #0bac19;
+    font-size: 72px;
+    animation: changetext 10s infinite linear;
+    text-shadow: 2px 4px 7px black;
+    font-family: 'Kablammo', cursive;
+}
+@keyframes changetext{
+    0%{
+        content: 'Web developer';
+    }
+    25%{
+        content: 'Web Designer';
+    }
+    50%{
+        content: 'UX/UI designer';
+    }
+    100%{
+        content: 'Freelancer';
+    }
+}
+.skills{
+    width: 350px;
+    height: 200px;
+    border: 1px solid red;
+    padding-top: 30px;
+    margin: 30px auto;
+    box-shadow: 2px 4px 9px red;
+    transition: 1.5s ease-in-out;
+    cursor: pointer;
+
+}
+.skills:hover{
+    transform: translateY(10px);
+}
+.info{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px dashed skyblueS;
+}
+.project{
+    padding-top: 30px;
+    margin: 30px auto;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+    
+}
+.project:hover{
+    transform: rotateX(90deg);
+}
+.card{
+    transition: 0.5s ease-in;
+    overflow: hidden;
+    height: 500px;
+    box-shadow: 2px 14px 12px black;
+    transition: 0.5s ease-in-out;
+    
+    
+}
+.card:hover{
+    box-shadow: 6px 8px 21px white;
+    transform: translateY(10px);
+   
+}
+.card img{
+    width: 100%;
+    height: 100%;
+
+  
+}
+.card img:hover{
+    transform: scale(1.3);
+}
+.card-head{
+    
+}
+#scrollTopBtn{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 25px;
+    height: 20px;
+    background-color: gainsboro;
+}
+.footer img{
+    border-radius: 50%;
+}
+nav img{
+    border-radius: 50%;
+}
+
+
